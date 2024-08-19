@@ -17,7 +17,7 @@ class LoginScreen extends StatelessWidget {
           IconButton(
             icon: const Icon(Icons.help_outline, color: Colors.black),
             onPressed: () {
-              // Ação do botão de ajuda
+              //botão de ajuda
             },
           ),
         ],
@@ -41,7 +41,7 @@ class LoginScreen extends StatelessWidget {
               icon: Icons.person_outline,
               text: 'Usar telefone ou email',
               onPressed: () {
-                // Ação para login por telefone ou email
+                //login por telefone ou email
               },
             ),
             const SizedBox(height: 10),
@@ -49,7 +49,7 @@ class LoginScreen extends StatelessWidget {
               icon: Icons.person_outline,
               text: 'Convidado',
               onPressed: () {
-                // Ação para login como convidado
+                //login como convidado
               },
             ),
             const SizedBox(height: 10),
@@ -65,7 +65,7 @@ class LoginScreen extends StatelessWidget {
               icon: Icons.apple,
               text: 'Continuar com Apple',
               onPressed: () {
-                // Ação para login com Apple
+                //login com Apple
               },
             ),
             const SizedBox(height: 10),
@@ -73,7 +73,7 @@ class LoginScreen extends StatelessWidget {
               icon: Icons.g_translate,
               text: 'Continuar com Google',
               onPressed: () {
-                // Ação para login com Google
+                //login com Google
               },
             ),
             const Spacer(),
@@ -92,7 +92,7 @@ class LoginScreen extends StatelessWidget {
                 const Text('Não tem uma conta?'),
                 TextButton(
                   onPressed: () {
-                    // Ação para cadastro
+                    //cadastro
                   },
                   child: const Text(
                     'Cadastrar',

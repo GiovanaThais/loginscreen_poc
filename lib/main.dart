@@ -36,9 +36,9 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
       body: Stack(
         children: [
           IconButton(
-            icon: Icon(Icons.help_outline, color: Colors.black),
+            icon: const Icon(Icons.help_outline, color: Colors.black),
             onPressed: () {
-              // Ação do botão de ajuda
+              //botão de ajuda
             },
           ),
           // Carrossel de imagens
@@ -59,21 +59,21 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
               );
             },
           ),
-          // Conteúdo sobreposto
+
           Positioned(
             bottom: 60,
             left: 16,
             right: 16,
             child: Column(
               children: [
-                // Indicador do carrossel
+                //carrossel
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: List.generate(
                     images.length,
                     (index) => AnimatedContainer(
-                      duration: Duration(milliseconds: 300),
-                      margin: EdgeInsets.symmetric(horizontal: 4),
+                      duration: const Duration(milliseconds: 300),
+                      margin: const EdgeInsets.symmetric(horizontal: 4),
                       width: _currentPage == index ? 12 : 8,
                       height: 8,
                       decoration: BoxDecoration(
@@ -85,8 +85,8 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                     ),
                   ),
                 ),
-                SizedBox(height: 20),
-                Text(
+                const SizedBox(height: 20),
+                const Text(
                   'Evolua em sua carreira e encontre vagas de trabalho',
                   textAlign: TextAlign.center,
                   style: TextStyle(
@@ -102,7 +102,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                     ],
                   ),
                 ),
-                SizedBox(height: 30),
+                const SizedBox(height: 30),
                 ElevatedButton(
                   onPressed: () {
                     Navigator.push(
@@ -111,49 +111,49 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                     );
                   },
                   style: ElevatedButton.styleFrom(
-                    backgroundColor: Color.fromARGB(255, 90, 190, 115),
-                    minimumSize: Size(double.infinity, 50),
+                    backgroundColor: const Color.fromARGB(255, 90, 190, 115),
+                    minimumSize: const Size(double.infinity, 50),
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(30),
                     ),
                   ),
-                  child: Text(
+                  child: const Text(
                     'Entrar ou Cadastrar',
                     style: TextStyle(color: Colors.white),
                   ),
                 ),
-                SizedBox(height: 10),
+                const SizedBox(height: 10),
                 ElevatedButton(
                   onPressed: () {
-                    // Ação do botão "Voucher"
+                    //botão "Voucher"
                   },
                   style: ElevatedButton.styleFrom(
                     backgroundColor: Colors.white,
-                    minimumSize: Size(double.infinity, 50),
+                    minimumSize: const Size(double.infinity, 50),
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(30),
-                      side: BorderSide(color: Colors.grey),
+                      side: const BorderSide(color: Colors.grey),
                     ),
                   ),
-                  child: Text(
+                  child: const Text(
                     'Voucher',
                     style: TextStyle(color: Colors.black),
                   ),
                 ),
-                SizedBox(height: 10),
+                const SizedBox(height: 10),
                 ElevatedButton(
                   onPressed: () {
-                    // Ação do botão "Convidado"
+                    //botão "Convidado"
                   },
                   style: ElevatedButton.styleFrom(
                     backgroundColor: Colors.white,
-                    minimumSize: Size(double.infinity, 50),
+                    minimumSize: const Size(double.infinity, 50),
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(30),
-                      side: BorderSide(color: Colors.grey),
+                      side: const BorderSide(color: Colors.grey),
                     ),
                   ),
-                  child: Text(
+                  child: const Text(
                     'Convidado',
                     style: TextStyle(color: Colors.black),
                   ),
